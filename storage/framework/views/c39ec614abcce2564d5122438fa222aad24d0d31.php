@@ -62,15 +62,15 @@
 						</div>
 					</div>
 					<div class="row mt-4">
-						<div class="col-lg-4">
+					<div class="col-lg-4">
 							<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
 								<div class="feature-box-icon" style="min-width: 4.7rem;">
-									<img src="<?php echo e(asset('img/services/web.png')); ?>" alt class="img-fluid" />
+									<img src="<?php echo e(asset('img/services/feasibility.png')); ?>" alt class="img-fluid" />
 								</div>
 								<div class="feature-box-info">
-									<h4 class="font-weight-semibold"><a href="demo-medical-departments-detail.html" class="text-decoration-none" style="color:white">Website and Apps</a></h4>
-									<p>Website & Apps Development. Native Apps with all required features.</p>
-								</div>	
+									<h4 class="font-weight-semibold"><a href="/services" class="text-decoration-none"  style="color:white">Sms Services</a></h4>
+									<p>Send bulk SMS for all operators and areas that you can't select.</p>
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-4">
@@ -79,7 +79,7 @@
 									<img src="<?php echo e(asset('img/services/graphic.png')); ?>" alt class="img-fluid" />
 								</div>
 								<div class="feature-box-info">
-									<h4 class="font-weight-semibold"><a href="demo-medical-departments-detail.html" class="text-decoration-none"  style="color:white">Online Advertisement</a></h4>
+									<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none"  style="color:white">Online Advertisement</a></h4>
 									<p>Online Advertising for your product and services through out media channels.</p>
 								</div>
 							</div>
@@ -90,7 +90,7 @@
 									<img src="<?php echo e(asset('img/services/mobile.png')); ?>" alt class="img-fluid" />
 								</div>
 								<div class="feature-box-info">
-									<h4 class="font-weight-semibold"><a href="demo-medical-departments-detail.html" class="text-decoration-none"  style="color:white">Branding and Graphic Design</a></h4>
+									<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none"  style="color:white">Branding and Graphic Design</a></h4>
 									<p>Creating Suitable content for your business needs for social media and other in addition to brand development.</p>
 								</div>
 							</div>
@@ -103,20 +103,21 @@
 									<img src="<?php echo e(asset('img/services/videos.png')); ?>" alt class="img-fluid" />
 								</div>
 								<div class="feature-box-info">
-									<h4 class="font-weight-semibold"><a href="demo-medical-departments-detail.html" class="text-decoration-none"  style="color:white">Videography and Photography</a></h4>
+									<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none"  style="color:white">Videography and Photography</a></h4>
 									<p>We provide you with professional photography to boost your business outcome and cover all your personal and business videos with up to date equipments that fulfill your needs.</p>
 								</div>
 							</div>
 						</div>
+						
 						<div class="col-lg-4">
 							<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
 								<div class="feature-box-icon" style="min-width: 4.7rem;">
-									<img src="<?php echo e(asset('img/services/feasibility.png')); ?>" alt class="img-fluid" />
+									<img src="<?php echo e(asset('img/services/web.png')); ?>" alt class="img-fluid" />
 								</div>
 								<div class="feature-box-info">
-									<h4 class="font-weight-semibold"><a href="demo-medical-departments-detail.html" class="text-decoration-none"  style="color:white">Sms Services</a></h4>
-									<p>Send bulk SMS for all operators and areas that you can't select.</p>
-								</div>
+									<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none" style="color:white">Website and Apps</a></h4>
+									<p>Website & Apps Development. Native Apps with all required features.</p>
+								</div>	
 							</div>
 						</div>
 						<div class="col-lg-4">
@@ -125,7 +126,7 @@
 									<img src="<?php echo e(asset('img/services/marketing.png')); ?>" alt class="img-fluid" />
 								</div>
 								<div class="feature-box-info">
-									<h4 class="font-weight-semibold"><a href="demo-medical-departments-detail.html" class="text-decoration-none"  style="color:white">Event Coverage</a></h4>
+									<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none"  style="color:white">Event Coverage</a></h4>
 									<p>Attending and covering your events in professional outcome.</p>
 								</div>
 							</div>
