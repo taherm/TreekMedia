@@ -101,7 +101,7 @@ class AdminController extends Controller
     {
         $this->validate(request(), [
             'image' => 'required',
-            'icon'=>'required'
+            
         ]);
         $serv = Service::find($id);
         $fn = $serv->title;
@@ -113,12 +113,12 @@ class AdminController extends Controller
         Image::make($image)->save($savePath, 100);
         $fullImagePath =$imageName;
         $serv->image = $fullImagePath;
-        $icon = request()->icon;
-        $iconName = md5(uniqid(rand() * (time()))) . '.' . $icon->getClientOriginalExtension();
-        $savePath = public_path() . self::UPLOAD_PATH . $iconName;
-        Image::make($icon)->save($savePath, 100);
-        $fullIconPath =$iconName;
-        $serv->icon = $fullIconPath;
+        //$icon = request()->icon;
+        //$iconName = md5(uniqid(rand() * (time()))) . '.' . $icon->getClientOriginalExtension();
+        //$savePath = public_path() . self::UPLOAD_PATH . $iconName;
+        //Image::make($icon)->save($savePath, 100);
+        //$fullIconPath =$iconName;
+        //$serv->icon = $fullIconPath;
         $serv->menu_id=Menu::where('title',request('menu'))->first()->id;
         $serv->save();
         return redirect('/admin');
@@ -165,7 +165,7 @@ class AdminController extends Controller
             'title' => 'required',
             'description' => 'required',
             'image' => 'required',
-            'icon' => 'required'
+         
         ]);
         $serv = new Service;
         $serv->title = request('title');
@@ -176,12 +176,12 @@ class AdminController extends Controller
         Image::make($image)->save($savePath, 100);
         $fullImagePath =$imageName;
         $serv->image = $fullImagePath;
-        $icon = request()->icon;
-        $iconName = md5(uniqid(rand() * (time()))) . '.' . $icon->getClientOriginalExtension();
-        $savePath = public_path() . self::UPLOAD_PATH . $iconName;
-        Image::make($icon)->save($savePath, 100);
-        $fullIconPath =$iconName;
-        $serv->icon = $fullIconPath;
+       // $icon = request()->icon;
+        //$iconName = md5(uniqid(rand() * (time()))) . '.' . $icon->getClientOriginalExtension();
+        //$savePath = public_path() . self::UPLOAD_PATH . $iconName;
+        //Image::make($icon)->save($savePath, 100);
+        //$fullIconPath =$iconName;
+        //$serv->icon = $fullIconPath;
         $serv->menu_id=Menu::where('title',request('submenu'))->first()->id;
         $serv->save();
         return redirect('/admin');
