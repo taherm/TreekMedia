@@ -23,33 +23,34 @@
 
 
 	<section class="section section-no-border">
-		<div class="container" style="background:url('clients.jpg');background-repeat: no-repeat;background-size: cover;height:500px"">
+		<div class="container" style="background:url('clients.jpg');background-repeat: no-repeat;background-size: cover;height:600px">
 			<div class="row">
-			<div class="col">
-				<h2 class="font-weight-semibold mb-0 text-center" style="color:white">Our Clients</h2>
+				<div class="col">
+					<h2 class="font-weight-semibold mb-0 text-center" style="color:white">Our Clients</h2>
+				</div>
 			</div>
+			<br><br>
+			<div class="row">
+
+
+				<div class="col-md-3 text-center">
+					<img src="{{asset('img/customers/1.png')}}" class="img-responsive" />
+				</div>
+				<div class="col-md-3 text-center">
+					<img src="{{asset('img/customers/2.jpg')}}" class="img-responsive" />
+				</div>
+				<div class="col-md-3 text-center">
+					<img src="{{asset('img/customers/3.png')}}" class="img-responsive" />
+				</div>
+				<div class="col-md-3 text-center">
+					<img src="{{asset('img/customers/4.png')}}" class="img-responsive" />
+				</div>
+
+
+
+			</div>
+			<br><br>
 		</div>
-		<br><br>
-		<div class="row">
-
-
-			<div class="col-md-3 text-center">
-				<img src="{{asset('img/customers/1.png')}}" alt class="img-fluid" />
-			</div>
-			<div class="col-md-3 text-center">
-				<img src="{{asset('img/customers/2.jpg')}}" alt class="img-fluid" />
-			</div>
-			<div class="col-md-3 text-center">
-				<img src="{{asset('img/customers/3.png')}}" alt class="img-fluid" />
-			</div>
-			<div class="col-md-3 text-center">
-				<img src="{{asset('img/customers/4.png')}}" alt class="img-fluid" />
-			</div>
-
-
-
-		</div>
-		<br><br>
 
 	</section>
 
