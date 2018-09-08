@@ -14,13 +14,16 @@ class CreateServicesTable extends Migration
     public function up()
     {
         Schema::create('services', function (Blueprint $table) {
+            $table->integer('menu_id')->unsigned();
+            $table->foreign('menu_id')->references('id')->on('menus')->onDelete('cascade')->onUpdate('cascade');
+            
             $table->increments('id');
             $table->string('title');
 
             $table->longText('description');
             $table->string('image');
            
-            $table->integer('menu_id');
+          
             $table->timestamps();
         });
     }

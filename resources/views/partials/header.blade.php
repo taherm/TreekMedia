@@ -6,7 +6,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="/">
-											<img alt="Porto" width="143" height="110" src="{{asset('Logo-treek.png')}}">
+											<img width="120" height="110" src="{{asset('Logo-treek.png')}}">
 										</a>
 									</div>
 								</div>
@@ -27,24 +27,14 @@
 															About Us
 														</a>
 													</li>
-													<li class="dropdown dropdown-full-color dropdown-secondary">
-														<a class="nav-link dropdown-toggle" class="dropdown-toggle" href="/">
+													<li class="dropdown-full-color dropdown-secondary">
+														<a class="nav-link" href="/services">
 															Services
 														</a>
-														<ul class="dropdown-menu">
-															<li><a class="dropdown-item" href="/services">Sms Services</a></li>
-															<li><a class="dropdown-item" href="/">Videography and Photography</a></li>
-															<li><a class="dropdown-item" href="/">Online Advertisement</a></li>
-															<li><a class="dropdown-item" href="/">Branding and Graphic Design</a></li>
-															<li><a class="dropdown-item" href="/">Event Coverage</a></li>
-															<li><a class="dropdown-item" href="/">Social Media Management</a></li>
-															<li><a class="dropdown-item" href="/">Website and Apps</a></li>
-														
-														</ul>
 													</li>
 													<li class="dropdown-full-color dropdown-secondary">
-														<a class="nav-link" href="/sms">
-															SMS
+														<a class="nav-link" href="/clients">
+															Our Clients
 														</a>
 													</li>
 													<li class="dropdown-full-color dropdown-secondary">

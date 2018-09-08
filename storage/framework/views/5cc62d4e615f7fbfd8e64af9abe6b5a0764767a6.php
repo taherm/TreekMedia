@@ -3,7 +3,7 @@
         <div class="content-top-1">
             
     <div class="mTop10">
-    <form method="POST" action="<?php echo e(url('/admin/del-slider')); ?>">
+    <form method="POST" action="<?php echo e(url('/admin/del-slider')); ?>" class="delete">
        <?php echo e(csrf_field()); ?>
 
        <input name="_method" value="delete" type="hidden">

@@ -319,14 +319,14 @@ html .badge-light {
   color: #007fc9;
 }
 html .btn-primary {
-  background-color: #008fe2;
-  border-color: #008fe2 #008fe2 #006faf;
+  background-color: #000000;
+
   color: #ffffff;
 }
 html .btn-primary:hover,
 html .btn-primary.hover {
-  background-color: #09a5ff;
-  border-color: #16a9ff #16a9ff #008fe2;
+  background-color: #000000;
+ 
   color: #ffffff;
 }
 html .btn-primary:focus,
@@ -2583,7 +2583,7 @@ html[dir="rtl"] #header .tip-light:before {
   border-right-color: transparent !important;
 }
 #header .header-btn-collapse-nav {
-  background: yellow;
+  background: white;
 }
 @media (min-width: 992px) {
   #header .header-nav-main nav > ul > li > a {
@@ -2743,7 +2743,7 @@ html[dir="rtl"] #header .tip-light:before {
     color: #ffffff;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary:hover > a {
-    background: yellow;
+    background: white;
     color: #000000;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary a {
@@ -2751,29 +2751,29 @@ html[dir="rtl"] #header .tip-light:before {
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary a:focus,
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary a:hover {
-    background: yellow;
+    background: white;
     color: #000000;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary a:after {
-    border-color: yellow transparent transparent transparent;
+    border-color: white transparent transparent transparent;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary .dropdown-menu {
-    border-top-color: yellow;
-    background-color: yellow;
+    border-top-color: white;
+    background-color: white;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary .dropdown-menu li a {
     color: #000000;
-    border-bottom-color: yellow;
+    border-bottom-color: white;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary .dropdown-menu li:hover > a {
-    background: yellow;
+    background: white;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary .dropdown-menu li.dropdown-submenu > a:after {
     border-color: transparent transparent transparent #ffffff;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary.open > a:before,
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-secondary:hover > a:before {
-    border-bottom-color: yellow;
+    border-bottom-color: white;
   }
   html #header .header-nav-main nav > ul > li.dropdown-full-color.dropdown-mega.dropdown-secondary .dropdown-mega-sub-title {
     color: #ffffff;

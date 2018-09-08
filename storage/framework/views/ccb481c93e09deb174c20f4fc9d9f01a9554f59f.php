@@ -36,7 +36,7 @@
                         <td><?php echo e($s->created_at); ?></td>
                         
                         <td> <a class="btn btn-default" href="<?php echo e(url('admin/'.$s->id.'/edit')); ?>">Edit</a> </td>
-                     <td> <form method="POST" action="<?php echo e(url('/admin/'.$s->id)); ?>">
+                     <td> <form method="POST" action="<?php echo e(url('/admin/'.$s->id)); ?>" class="delete">
 										<?php echo e(csrf_field()); ?>
 
 										<input name="_method" value="delete" type="hidden">

@@ -32,10 +32,13 @@ Route::get('/booking-request', function () {
     return view('booking-request');
 });
 
-Route::get('/sms', function () {
-    return view('sms');
+Route::get('/clients', function () {
+    return view('clients');
 });
 
+Route::get('/services', function () {
+    return view('services');
+});
 
 Route::get('admin','AdminController@index')->middleware('auth');
 Route::post('admin/slider','AdminController@add_slider')->middleware('auth');

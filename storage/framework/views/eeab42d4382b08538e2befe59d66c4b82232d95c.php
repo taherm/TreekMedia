@@ -25,7 +25,7 @@
                         </a>
                         </td>
 
-                     <td>   <form method="POST" action="<?php echo e(url('/admin/delete-menu/'.$item->id)); ?>">
+                     <td>   <form method="POST" action="<?php echo e(url('/admin/delete-menu/'.$item->id)); ?>" class="delete">
 										<?php echo e(csrf_field()); ?>
 
 										<input name="_method" value="delete" type="hidden">

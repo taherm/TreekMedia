@@ -95,6 +95,11 @@
         <i class="fa fa-angle-right"></i>
         <span>Dashboard</span>
     </h2>
+    @if($flash=session('message'))
+        <div class="alert alert-success" id="flash-message">
+  {{$flash}}
+</div>
+@endif
 </div>                        <div class="content-top" >
 
                 
@@ -207,6 +212,14 @@ tinymce.init({
     input.click();
   }
 });</script>
+
+
+
+<script>
+    $(".delete").on("submit", function(){
+        return confirm("Do you want to delete this item?");
+    });
+</script>
 
 
 

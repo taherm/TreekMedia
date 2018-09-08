@@ -38,6 +38,7 @@ class AdminController extends Controller
     public function delete_slider()
     {
         Slider::where('image', request('image'))->delete();
+        session()->flash('message','Slider Deleted!');
         return redirect('/admin/delete-slider');
     }
 
@@ -54,6 +55,7 @@ class AdminController extends Controller
         $fullImagePath =$imageName;
         $slide->image = $fullImagePath;
         $slide->save();
+        session()->flash('message','Slider Added!');
         return redirect('/admin/add-slider');
     }
 
@@ -87,6 +89,7 @@ class AdminController extends Controller
         $menu = new Menu;
         $menu->title = request('title');
         $menu->save();
+        session()->flash('message','Menu Added!');
         return redirect('/admin');
     }
 
@@ -121,6 +124,7 @@ class AdminController extends Controller
         //$serv->icon = $fullIconPath;
         $serv->menu_id=Menu::where('title',request('menu'))->first()->id;
         $serv->save();
+        session()->flash('message','Services Edited!');
         return redirect('/admin');
     }
 
@@ -144,6 +148,7 @@ class AdminController extends Controller
         $portfolio->tag = request('tag');
         $portfolio->menu_id=Menu::where('title',request('menu'))->first()->id;
         $portfolio->save();
+        session()->flash('message','Portfolio Edited!');
         return redirect('/admin');
     }
 
@@ -155,6 +160,7 @@ class AdminController extends Controller
         $menu = Menu::where('title', "=", $menu_name)->first();
         $menu->title = request('title');
         $menu->save();
+        session()->flash('message','Menu Edited!');
         return redirect('/admin');
     }
 
@@ -184,6 +190,7 @@ class AdminController extends Controller
         //$serv->icon = $fullIconPath;
         $serv->menu_id=Menu::where('title',request('submenu'))->first()->id;
         $serv->save();
+        session()->flash('message','Page Added!');
         return redirect('/admin');
     }
 
@@ -209,6 +216,7 @@ class AdminController extends Controller
         $portfolio->menu_id=Menu::where('title',request('submenu'))->first()->id;
        
         $portfolio->save();
+        session()->flash('message','Portfolio Added!');
         return redirect('/admin');
     }
 
@@ -219,6 +227,7 @@ class AdminController extends Controller
         File::delete('uploads/'.$serv->image);
         File::delete('uploads/'.$serv->icon);
         $serv->delete();
+        session()->flash('message','Page Deleted!');
         return redirect('/admin');
     }
 
@@ -229,6 +238,7 @@ class AdminController extends Controller
         $portfolio = Portfolio::find($id);
         File::delete('uploads/'.$portfolio->image);
         $portfolio->delete();
+        session()->flash('message','Portfolio Deleted!');
         return redirect('/admin');
     }
 
@@ -237,6 +247,7 @@ class AdminController extends Controller
     {
         $menu = Menu::find($id);
         $menu->delete();
+        session()->flash('message','Menu Deleted!');
         return redirect('/admin');
     }
 

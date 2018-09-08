@@ -1,0 +1,15 @@
+<div class="container">
+
+				<div class="row">
+					<div class="col-lg-12" style="background-image:url('about-treek.jpg');background-size:100% 100%;background-repeat:no-repeat;">
+						<h2 class="font-weight-semibold mb-3">Welcome to TreekMedia</h2>
+
+						<p class="lead font-weight-normal">Treek Media provides a full management for the client’s different social media accounts. We help you engage your customers, humanize your brand and build upon what works. If leadership in your market is your goal, Treek Media is your partner..</p>
+<br><br><br><br><br><br><br><br><br><br><br>
+						</div>
+					
+				</div>
+
+				
+
+			</div>
