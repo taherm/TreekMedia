@@ -22,7 +22,7 @@
 
 
 	<section class="section section-no-border">
-		<div class="container" style="background:url('clients.jpg');background-repeat: no-repeat;background-size: cover;height:600px">
+		<div class="container" style="background-repeat: no-repeat;background-size: cover;height:600px">
 			<div class="row">
 				<div class="col">
 					<h2 class="font-weight-semibold mb-0 text-center" style="color:white">Our Clients</h2>

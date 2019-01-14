@@ -20,7 +20,7 @@
 
 
 	<section class="section section-no-border">
-		<div class="container" style="background:url('contact.jpg');background-repeat: no-repeat;background-size: cover;height:900px;border-color: coral;">
+		<div class="container" style="background-repeat: no-repeat;background-size: cover;height:900px;border-color: coral;">
 		<br>
 			<div class="row mt-5">
 				<div class="col-lg-4">
