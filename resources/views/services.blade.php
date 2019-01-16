@@ -34,7 +34,7 @@
 					<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp"
 					    data-appear-animation-delay="300">
 						<div class="feature-box-icon" style="min-width: 4.7rem;">
-							<img src="{{asset('img/services/feasibility.png')}}" alt class="img-fluid" />
+							<img src="{{asset('img/services/feasibility_new.png')}}" alt class="img-fluid" />
 						</div>
 						<div class="feature-box-info">
 							<h4 class="font-weight-semibold"><a href="/services" class="text-decoration-none" style="color:white">Sms
@@ -47,7 +47,7 @@
 					<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp"
 					    data-appear-animation-delay="300">
 						<div class="feature-box-icon" style="min-width: 4.7rem;">
-							<img src="{{asset('img/services/graphic.png')}}" alt class="img-fluid" />
+							<img src="{{asset('img/services/graphic_new.png')}}" alt class="img-fluid" />
 						</div>
 						<div class="feature-box-info">
 							<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none" style="color:white">Online
@@ -60,7 +60,7 @@
 					<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp"
 					    data-appear-animation-delay="300">
 						<div class="feature-box-icon" style="min-width: 4.7rem;">
-							<img src="{{asset('img/services/mobile.png')}}" alt class="img-fluid" />
+							<img src="{{asset('img/services/mobile_new.png')}}" alt class="img-fluid" />
 						</div>
 						<div class="feature-box-info">
 							<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none" style="color:white">Branding and
@@ -76,7 +76,7 @@
 					<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp"
 					    data-appear-animation-delay="300">
 						<div class="feature-box-icon" style="min-width: 4.7rem;">
-							<img src="{{asset('img/services/videos.png')}}" alt class="img-fluid" />
+							<img src="{{asset('img/services/videos_new.png')}}" alt class="img-fluid" />
 						</div>
 						<div class="feature-box-info">
 							<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none" style="color:white">Videography and
@@ -91,7 +91,7 @@
 					<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp"
 					    data-appear-animation-delay="300">
 						<div class="feature-box-icon" style="min-width: 4.7rem;">
-							<img src="{{asset('img/services/web.png')}}" alt class="img-fluid" />
+							<img src="{{asset('img/services/web_new.png')}}" alt class="img-fluid" />
 						</div>
 						<div class="feature-box-info">
 							<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none" style="color:white">Website and Apps</a></h4>
@@ -103,7 +103,7 @@
 					<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp"
 					    data-appear-animation-delay="300">
 						<div class="feature-box-icon" style="min-width: 4.7rem;">
-							<img src="{{asset('img/services/marketing.png')}}" alt class="img-fluid" />
+							<img src="{{asset('img/services/marketing_new.png')}}" alt class="img-fluid" />
 						</div>
 						<div class="feature-box-info">
 							<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none" style="color:white">Event Coverage</a></h4>
@@ -118,7 +118,7 @@
 					<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInUp"
 					    data-appear-animation-delay="300">
 						<div class="feature-box-icon" style="min-width: 4.7rem;">
-							<img src="{{asset('img/services/social.png')}}" alt class="img-fluid" />
+							<img src="{{asset('img/services/social_new.png')}}" alt class="img-fluid" />
 						</div>
 						<div class="feature-box-info">
 							<h4 class="font-weight-semibold"><a href="/" class="text-decoration-none" style="color:white">Social Media

@@ -4,7 +4,7 @@
         <div class="content-top-1">
             
     <div class="mTop10">
-        <form method="POST" action="{{url('/admin/slider')}}" enctype="multipart/form-data">
+        <form method="POST" action="{{url('/admin/icons')}}" enctype="multipart/form-data">
             {{ csrf_field() }}
 
         <div class="form-group">

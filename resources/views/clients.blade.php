@@ -32,19 +32,14 @@
 			<br><br>
 			<div class="row">
 
-
+				@foreach($icons as $icon)
 				<div class="col-md-3 text-center">
-					<img src="{{asset('img/customers/1.png')}}" class="img-responsive" />
+					<img src="{{asset('uploads/'.$icon->image)}}" class="img-responsive" />
+					<br>
+				<br><br>
 				</div>
-				<div class="col-md-3 text-center">
-					<img src="{{asset('img/customers/2.jpg')}}" class="img-responsive" />
-				</div>
-				<div class="col-md-3 text-center">
-					<img src="{{asset('img/customers/3.png')}}" class="img-responsive" />
-				</div>
-				<div class="col-md-3 text-center">
-					<img src="{{asset('img/customers/4.png')}}" class="img-responsive" />
-				</div>
+				
+				@endforeach
 
 
 

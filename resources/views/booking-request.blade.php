@@ -23,41 +23,42 @@
 
 	<section class="section section-no-border">
 
-		<div class="container" style="background:url('booking.jpg');background-repeat: no-repeat;background-size: cover;">
+		<div class="container" style="background-repeat: no-repeat;background-size: cover;">
 
 			<div class="row mt-5">
 				<div class="col-lg-12">
 					<h2 class="font-weight-semibold mb-3 text-center" style="color:white;">Tell Us Your Project</h2>
+					<form action="{{url('/booking-request')}}" method="POST">
+						{{ csrf_field() }}
+						<div class="form-group">
+							<label for="exampleInputEmail1" style="color:white;">Event Title</label>
+							<div class="col-10">
+								<input  class="form-control" size="30" align="center" placeholder="Event Title" name="name">
+							</div>
+						</div>
 
-					<div class="form-group">
-						<label for="exampleInputEmail1" style="color:white;">From*</label>
-						<div class="col-10">
-							<input type="email" class="form-control" size="30" align="center" id="exampleInputEmail1" maxlength="10"
-							  aria-describedby="emailHelp" placeholder="Event Title">
+						<div class="form-group">
+							<label for="example-date-input" style="color:white;">From Date</label>
+							<div class="col-10">
+								<input class="form-control" type="date" id="example-date-input" name="from_date">
+							</div>
 						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="example-date-input" style="color:white;">Date</label>
-						<div class="col-10">
-							<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+						<div class="form-group">
+							<label for="example-date-input" style="color:white;">To Date</label>
+							<div class="col-10">
+								<input class="form-control" type="date"  id="example-date-input" name="to_date">
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="example-date-input" style="color:white;">Date</label>
-						<div class="col-10">
-							<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+						<div class="form-group">
+							<label for="exampleTextarea" style="color:white;">Message</label>
+							<div class="col-10">
+								<textarea class="form-control" id="exampleTextarea" rows="3" name="message"></textarea>
+							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label for="exampleTextarea" style="color:white;">Message</label>
 						<div class="col-10">
-							<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+							<button type="submit" class="btn btn-primary">Submit</button>
 						</div>
-					</div>
-					<div class="col-10">
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</div>
+					</form>
 				</div>
 
 			</div>

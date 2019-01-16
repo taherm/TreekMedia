@@ -42,10 +42,10 @@
 												Booking Request
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="/">SMS</a></li>
-												<li><a class="dropdown-item" href="/">Videography</a></li>
-												<li><a class="dropdown-item" href="/">Photography</a></li>
-												<li><a class="dropdown-item" href="/">Live Event Coverage</a></li>
+												<li><a class="dropdown-item" href="/booking-request">SMS</a></li>
+												<li><a class="dropdown-item" href="/booking-request">Videography</a></li>
+												<li><a class="dropdown-item" href="/booking-request">Photography</a></li>
+												<li><a class="dropdown-item" href="/booking-request">Live Event Coverage</a></li>
 											</ul>
 										</li>
 										<li class="dropdown-full-color dropdown-secondary">

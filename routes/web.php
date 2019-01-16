@@ -11,13 +11,7 @@
 |
  */
 
-Route::get('images', function () {
-    // If the Content-Type and Accept headers are set to 'application/json', 
-    // this will return a JSON structure. This will be cleaned up later.
-    $images = \App\Service::find(1);
-    return response()->json($images);
 
-});
 
 
 Route::get('/', function () {
@@ -42,7 +36,9 @@ Route::get('/booking-request', function () {
 });
 
 Route::get('/clients', function () {
-    return view('clients');
+    $icons = \App\Icon::all();
+
+    return view('clients', compact('icons'));
 });
 
 Route::get('/services', function () {
@@ -50,56 +46,18 @@ Route::get('/services', function () {
 });
 
 Route::get('admin', 'AdminController@index')->middleware('auth');
-Route::post('admin/slider', 'AdminController@add_slider')->middleware('auth');
+Route::post('admin/icons', 'AdminController@add_icons')->middleware('auth');
 Route::delete('admin/del-slider', 'AdminController@delete_slider')->middleware('auth');
 Route::get('admin/delete-slider', function () {
     return view('admin.delete-slider');
 })->middleware('auth');
-Route::get('admin/add-slider', function () {
-    return view('admin.add-slider');
+Route::get('admin/add-icons', function () {
+    return view('admin.add-icons');
 })->middleware('auth');
-Route::get('admin/page', 'AdminController@show');
-Route::get('admin/create-portfolio', function () {
-    return view('admin.create-portfolio');
-})->middleware('auth');
-Route::get('admin/portfolio', 'AdminController@portfolio');
-Route::get('admin/create-page', function () {
-    return view('admin.create-page');
-})->middleware('auth');
-
-Route::post('sub-menu', 'AdminController@submenu')->middleware('auth');
-Route::post('main-menu', 'AdminController@mainmenu')->middleware('auth');
-Route::post('admin', 'AdminController@store')->middleware('auth');
-Route::delete('admin/{id}', 'AdminController@destroy')->middleware('auth');
-Route::get('admin/{id}/edit', 'AdminController@edit')->middleware('auth');
-Route::get('admin/{id}/edit_menu', 'AdminController@edit_menu')->middleware('auth');
-Route::post('admin/add-portfolio', 'AdminController@add_portfolio')->middleware('auth');
-Route::post('admin/portfolio-edit/{id}', 'AdminController@edit_portfolio')->middleware('auth');
-
-Route::delete('admin/delete-portfolio/{id}', 'AdminController@delete_portfolio')->middleware('auth');
-Route::get('admin/edit-portfolio/{id}', function ($id) {
-    $serv = Portfolio::find($id);
-    return view('admin.edit-portfolio', compact('serv'));
-})->middleware('auth');
-Route::post('admin/{id}', 'AdminController@update')->middleware('auth');
-Route::post('admin_edit/{id}', 'AdminController@updatemenu')->middleware('auth');
-
-Route::get('admin/sub-menu', function () {
-    return view('admin.sub-menu');
-})->middleware('auth');
-Route::get('admin/menu', function () {
-    $cat = \App\Menu::all();
-    return view('admin.menu', compact('cat'));
-})->middleware('auth');
-Route::get('admin/delete-menu', function () {
-    return view('admin.delete-menu');
-})->middleware('auth');
-Route::delete('admin/delete-menu/{id}', 'AdminController@del')->middleware('auth');
-
-Route::delete('admin/submenu_edit', 'AdminController@editsub')->middleware('auth');
 
 
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/booking-request', 'BookingController@send');

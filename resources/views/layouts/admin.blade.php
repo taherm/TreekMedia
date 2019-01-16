@@ -49,37 +49,14 @@
                     <li>
                         <a href="{{url('/admin')}}" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon " ></i><span class="nav-label black">Dashboards</span> </a>
                     </li>
-                    <li>
-                        <a href="{{url('admin/menu')}}" class=" hvr-bounce-to-right">
-                            <i class="fa fa-sliders nav_icon " ></i>
-                            <span class="nav-label black">Menu</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url('admin/page')}}" class=" hvr-bounce-to-right">
-                            <i class="fa fa-clone nav_icon" ></i>
-                            <span class="nav-label black">Pages</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{url('admin/portfolio')}}" class=" hvr-bounce-to-right">
-                            <i class="fa fa-clone nav_icon" ></i>
-                            <span class="nav-label black">Portfolio</span>
-                        </a>
-                    </li>
                     
                     <li>
-                        <a href="{{url('admin/add-slider')}}" class=" hvr-bounce-to-right">
+                        <a href="{{url('admin/add-icons')}}" class=" hvr-bounce-to-right">
                             <i class="fa fa-snowflake-o nav_icon" ></i>
-                            <span class="nav-label black">Add Slider</span>
+                            <span class="nav-label black">Add Client Icons</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="{{url('admin/delete-slider')}}" class=" hvr-bounce-to-right">
-                            <i class="fa fa-snowflake-o nav_icon" ></i>
-                            <span class="nav-label black">Delete Slider</span>
-                        </a>
-                    </li>
+                   
                     
                 </ul>
             </div>
