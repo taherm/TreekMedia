@@ -11,6 +11,7 @@ class BookingController extends Controller
     {
 
         $data = [
+            'type' => request('type'),
             'name' => request('name'),
             'from' => request('from_date'),
             'to' => request('to_date'),
@@ -24,7 +25,7 @@ class BookingController extends Controller
         } catch (\Exception $e) {
             dd($e->getMessage());
         }
-        return redirect('/booking-request');
+        return redirect('/');
     }
 
 }

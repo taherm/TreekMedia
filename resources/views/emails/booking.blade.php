@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<h1>TreekMedia Booking E-Mail</h1>
+<h1>TreekMedia {{$data['type']}} E-Mail</h1>
     <p>Event Title: {{$data['name']}}</p>
     <p>From date: {{$data['from']}}</p>
     <p>To date: {{$data['to']}}</p>

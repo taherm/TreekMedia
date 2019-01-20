@@ -56,6 +56,7 @@
 							</div>
 						</div>
 						<input class="form-control" type="hidden" name="type" value={{$name}}>
+						
 						<div class="col-10">
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</div>

@@ -38,14 +38,14 @@
 											</a>
 										</li>
 										<li class="dropdown dropdown-full-color dropdown-secondary">
-											<a class="nav-link dropdown-toggle" class="dropdown-toggle" href="/booking-request">
+											<a class="nav-link dropdown-toggle" onclick="return false" class="dropdown-toggle" href="/booking-request">
 												Booking Request
 											</a>
 											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="/booking-request">SMS</a></li>
-												<li><a class="dropdown-item" href="/booking-request">Videography</a></li>
-												<li><a class="dropdown-item" href="/booking-request">Photography</a></li>
-												<li><a class="dropdown-item" href="/booking-request">Live Event Coverage</a></li>
+												<li><a class="dropdown-item" href="/sms">SMS</a></li>
+												<li><a class="dropdown-item" href="/videography">Videography</a></li>
+												<li><a class="dropdown-item" href="/photography">Photography</a></li>
+												<li><a class="dropdown-item" href="/live-event">Live Event Coverage</a></li>
 											</ul>
 										</li>
 										<li class="dropdown-full-color dropdown-secondary">

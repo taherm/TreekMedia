@@ -35,6 +35,27 @@ Route::get('/booking-request', function () {
     return view('booking-request');
 });
 
+Route::get('/videography', function () {
+    $name = "Videography";
+    return view('videography', compact('name'));
+});
+
+Route::get('/sms', function () {
+    $name = "SMS";
+    return view('sms', compact('name'));
+});
+
+Route::get('/photography', function () {
+    $name = "Photography";
+    return view('photography', compact('name'));
+});
+
+Route::get('/live-event', function () {
+    $name = "Live Event Converage";
+    return view('live-event', compact('name'));
+});
+
+
 Route::get('/clients', function () {
     $icons = \App\Icon::all();
 

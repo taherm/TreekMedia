@@ -1,5 +1,4 @@
-@extends('layouts.master')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 
 
@@ -43,4 +42,5 @@ receive. If leadership in your market is your goal, Treek Media is your partner.
 
 
 
-	@endsection
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,5 +1,4 @@
-@extends('layouts.master')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 
 
@@ -9,12 +8,12 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6">
-					<h1>{{$name}}</h1>
+					<h1>Booking Request</h1>
 				</div>
 				<div class="col-lg-6">
 					<ul class="breadcrumb pb-0">
 						<li><a href="#">Home</a></li>
-						<li class="active">{{$name}}</li>
+						<li class="active">Booking Request</li>
 					</ul>
 				</div>
 			</div>
@@ -28,8 +27,9 @@
 			<div class="row mt-5">
 				<div class="col-lg-12">
 					<h2 class="font-weight-semibold mb-3 text-center" style="color:white;">Tell Us Your Project</h2>
-					<form action="{{url('/booking-request')}}" method="POST">
-						{{ csrf_field() }}
+					<form action="<?php echo e(url('/booking-request')); ?>" method="POST">
+						<?php echo e(csrf_field()); ?>
+
 						<div class="form-group">
 							<label for="exampleInputEmail1" style="color:white;">Event Title</label>
 							<div class="col-10">
@@ -55,7 +55,8 @@
 								<textarea class="form-control" id="exampleTextarea" rows="3" name="message"></textarea>
 							</div>
 						</div>
-						<input class="form-control" type="hidden" name="type" value={{$name}}>
+						<input class="form-control" type="hidden"  id="" name="type" value=<?php echo e($name); ?>>
+						
 						<div class="col-10">
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</div>
@@ -71,4 +72,5 @@
 
 		<br>
 	</section>
-	@endsection
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

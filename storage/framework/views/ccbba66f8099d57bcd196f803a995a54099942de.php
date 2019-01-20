@@ -1,5 +1,4 @@
-@extends('layouts.master')
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 
 
@@ -27,14 +26,14 @@
 			<br><br>
 			<div class="row">
 
-				@foreach($icons as $icon)
+				<?php $__currentLoopData = $icons; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $icon): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 				<div class="col-md-3 text-center">
-					<img src="{{asset('uploads/'.$icon->image)}}" class="img-responsive" />
+					<img src="<?php echo e(asset('uploads/'.$icon->image)); ?>" class="img-responsive" />
 					<br>
 				<br><br>
 				</div>
 				
-				@endforeach
+				<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 
 
@@ -45,4 +44,5 @@
 	</section>
 
 
-	@endsection
+	<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
